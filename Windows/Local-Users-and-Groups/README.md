@@ -53,7 +53,7 @@ Remove-LocalUser -Name "Fedora"
 - Windows local user administration
 - Windows local group administration
 - PowerShell (Get-LocalUser, New-LocalUser, Add-LocalGroupMember, etc.)
-- Verifying changes through the CLI and GUI
+- Verifying changes through the cli and gui
 ## What I Learned
 - How to create, disable, enable, and delete local user accounts through both the GUI and PowerShell.
 - How to add and remove users from local groups, and how to verify group membership.
