@@ -9,7 +9,7 @@ Remotely connect from a Kali Linux virtual machine to a Windows 11 virtual machi
 ## Environment
 
 - VMware Workstation
-- Windows 11
+- Windows 11 Pro
 - Kali Linux
 - xfreerdp
 
@@ -79,7 +79,6 @@ query user
 - How to identify a Windows machine's IP address using `ipconfig`.
 - How to verify network connectivity using `ping`.
 - How Windows Defender Firewall can block inbound RDP connections and how to resolve the issue.
-- The importance of troubleshooting connectivity step by step instead of assuming the client or server is misconfigured.
 
 ## Screenshots
 
