@@ -9,7 +9,6 @@ Restrict a folder to a single user using `icacls`, then verify that other users 
 - VMware workstation pro
 - Windows 11 Pro
 - PowerShell (run as Administrator)
-- Users from my [Windows Local User & Group Management](link-to-your-repo) project: `adam` (granted access), `alex` (no access)
 
 ---
 
@@ -93,7 +92,7 @@ C:\random\Finance\ BUILTIN\Administrators:(I)(OI)(CI)(F)
 ---
 
 ## Why Inheritance Was Disabled
-By default the folder inherits permissions from its parent, including broad entries like `Users`, which can't be removed from the child while inheritance is on. Disabling it makes the folder independent, so only the intended access remains.
+The folder inherits permissions from its parent, disable inheritance to set its own permissions.
 
 ---
 
@@ -104,10 +103,9 @@ By default the folder inherits permissions from its parent, including broad entr
 - Verifying changes before and after
 
 ## What I Learned
-- Disabling inheritance is what makes it possible to remove inherited entries like `Users`.
 - `/grant` adds permissions, while `/grant:r` replaces existing ones.
 - `(OI)(CI)` applies a permission to files and subfolders inside the folder.
-- Least privilege: grant only the access needed, only to who needs it.
+-  Grant only the access needed, only to who needs it.
 - Testing as each user is the only real proof that permissions work.
 
 ---
